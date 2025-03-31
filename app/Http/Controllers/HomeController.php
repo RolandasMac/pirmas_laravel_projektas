@@ -5,7 +5,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view("welcome");
+        $kintamasis = "duomenysiscontroller";
+        return view("gaidys", compact("kintamasis"));
     }
     public function home()
     {

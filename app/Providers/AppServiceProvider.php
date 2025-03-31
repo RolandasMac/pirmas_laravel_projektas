@@ -1,5 +1,4 @@
 <?php
-
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
@@ -19,6 +18,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        // Gate::define("show-product", function ($user, Product $product) {
+        //     return $user->id === $product->user_id;
+        // });
     }
 }

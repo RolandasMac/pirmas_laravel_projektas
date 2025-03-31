@@ -1,6 +1,7 @@
-import "./bootstrap";
-// import { createApp } from "vue"; // Importuojame Vue
-// import App from "./App.vue"; // Importuojame pagrindinį Vue komponentą
+import './bootstrap';
 
-// // Sukuriame Vue aplikaciją ir pridedame ją prie #app elemento
-// createApp(App).mount("#app");
+import Alpine from 'alpinejs';
+
+window.Alpine = Alpine;
+
+Alpine.start();

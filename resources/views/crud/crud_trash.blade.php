@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.app2')
 @section('title')
     {{-- {{$kintamasis1}} --}}
 @endsection('title')
@@ -111,6 +111,7 @@
                                                 method="POST" style="display: none;">
                                                 @csrf
                                                 @method('DELETE')
+                                                <input type="text" name="user_id" value="2" hidden>
                                                 <input type="hidden" name="id" value="{{ $crud->id }}">
                                             </form>
 

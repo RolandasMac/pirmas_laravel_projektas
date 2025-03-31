@@ -6,8 +6,33 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File as HandleFile;
 use Illuminate\Support\Facades\Storage;
 
+// class CrudController extends Controller implements HasMiddleware
 class CrudController extends Controller
 {
+    //Su Middleware
+    // public static function middleware()
+    // {
+    //     return [new Middleware(CheckUserRoleMiddleware::class)];
+    // }
+
+    //Kitas būdas
+    // public function __construct()
+    // {
+    //     $this->middleware(CheckUserRoleMiddleware::class);
+    // }
+
+    //Kai kuriems class metodams
+    // public function __construct()
+    // {
+    //     $this->middleware(CheckUserRoleMiddleware::class)->only(['store', 'update']);
+    // }
+
+    //visiems class metodams išskyrus
+    // public function __construct()
+    // {
+    //     $this->middleware(CheckUserRoleMiddleware::class)->except(['index']);
+    // }
+
     /**
      * Display a listing of the resource.
      */
